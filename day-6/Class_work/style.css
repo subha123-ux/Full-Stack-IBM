@@ -49,8 +49,9 @@
     
 }
 
-#box:hover{
+#parent:hover+#box{
     display: block;
+    cursor: pointer;
 }
 #btn{
     background-color: red;
