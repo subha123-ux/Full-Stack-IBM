@@ -107,7 +107,6 @@ console.log(5<3 || 10>20); // Output false
 console.log(!(5>3)); //Output false
 
 
-
 //Section 6:Function Parameters vs Arguments
 
 function sum(a,b,c=5){
