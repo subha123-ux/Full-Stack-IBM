@@ -69,14 +69,23 @@ let data=[
     {name:"suv",price:200000,rating:5},
     {name:"earphone",price:1900,rating:4.5}
 ]
-console.log(data);
+// console.log(data);
 
-let ans=data.sort((a,b)=>{
-    if(a.name<b.name){
-        return -1;
-    }else{
-        return 1;
-    }
-});
-console.log(ans)
+// let ans=data.sort((a,b)=>{
+//     if(a.name<b.name){
+//         return -1;
+//     }else{
+//         return 1;
+//     }
+//     return 0;
+// });
+// console.log(ans)
 
+
+data.sort((a,b)=>{
+    return a.name.localeCompare(b.name);    //It is better for text comparision. It will handel the case sensitive property also.
+})
+console.log(data)
+
+
+//In function if we use {} than we have to use return. If we don't use {} don't have to write return, We can write directly.
