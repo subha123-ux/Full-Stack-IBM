@@ -12,9 +12,9 @@
 
 
 //map
-
-// let output=arr.map((el,index)=>{
-//     return el**2;
+// let arr=[1,3,5,7];
+// let output=arr.filter((el,index)=>{
+//     return el%3==0;
 // });
 // console.log(output)
 
@@ -34,11 +34,11 @@
 
 //Reduce
 
-// let arr=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
-// let output=arr.reduce((el,acc)=>{
-//     return el+acc;
-// },0);
-// console.log(output)
+let arr=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+let output=arr.reduce((el,acc)=>{
+    return el+acc;
+},0);
+console.log(output)
 
 
 // let output=arr.map((el,index)=>{
