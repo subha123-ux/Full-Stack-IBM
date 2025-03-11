@@ -1,0 +1,50 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    },
+    {
+      "id": "4476",
+      "title": "from svu",
+      "views": 0.0298051578462597
+    },
+    {
+      "id": "61c9",
+      "title": "day",
+      "views": 0.9210986288942731
+    },
+    {
+      "id": "8eb8",
+      "title": "hi",
+      "views": 0.058073673880598475
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "svu": [
+    {
+      "id": "2",
+      "text": "Nothing"
+    }
+  ]
+}
