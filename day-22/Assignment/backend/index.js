@@ -1,5 +1,4 @@
 const fileHandler = require('./utils/fileheader');
-//const fileHandler1 = require('./utils/helpers/fileheader');
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
@@ -16,14 +15,13 @@ const PORT = 3000;
 app.use(express.json());
 app.use(logRequest);
 
-// System Information (Logged on server start)
+// System Information 
 console.log(`Hostname: ${os.hostname()}`);
 console.log(`OS Type: ${os.type()}`);
 console.log(`Total Memory: ${os.totalmem()}`);
 
 // Routes
 
-// Home Route
 app.get('/', (req, res) => {
   res.send('Welcome to the Node.js Express API!');
 });
