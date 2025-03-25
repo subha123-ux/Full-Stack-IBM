@@ -1,0 +1,73 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    background-color: #ff5733;
+    color: white;
+    padding: 1px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Table styling */
+#cart {
+    margin: auto;
+    width: 80%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    background: white;
+}
+
+#cart th, #cart td {
+    border: 1px solid #0a0a0a;
+    padding: 10px;
+    text-align: center;
+}
+
+#cart th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* Image inside the cart */
+#cart img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Buttons */
+button {
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #d84315;
+}
+
+/* Checkout and back buttons */
+.checkout-container {
+    margin-top: 20px;
+}
+
+.checkout-container button {
+    padding: 12px 20px;
+    font-size: 18px;
+}

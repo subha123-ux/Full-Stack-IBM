@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Methods</title>
+    <link rel="stylesheet" href="paymentstyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>Total Amount</p>
+        </div>
+        <div class="payment-methods">
+            <a href="#"><div class="method" id="cashOnDelivery">
+                <img src="https://www.svgrepo.com/show/422172/cash-coins-currency.svg" alt="Cash">
+                <span>Cash on Delevari</span>
+            </div></a>
+            <a href="paycard.html"><div class="method">
+                <img src="https://www.svgrepo.com/show/502788/payment-card.svg" alt="Card">
+                <span>Card</span>
+            </div></a>
+            <a href="upi.html"><div class="method">
+                <img src="https://www.svgrepo.com/show/194568/qr-code.svg" alt="UPI">
+                <span>UPI / QR</span>
+            </div></a>
+            <a href="netbanking.html"><div class="method">
+                <img src="https://www.svgrepo.com/show/291261/banking-bank.svg" alt="Netbanking">
+                <span>Netbanking</span>
+            </div></a>
+            <a href="netbanking.html"><div class="method">
+                <img src="https://www.svgrepo.com/show/521920/wallet.svg" alt="Wallet">
+                <span>Wallet</span>
+            </div></a>
+            <a href="#"><div class="method" id="payLater">
+                <img src="https://www.svgrepo.com/show/425160/payment-pay-later.svg" alt="Pay Later">
+                <span>Pay Later (ICICI Bank PayLater)</span>
+            </div></a>
+        </div>
+    </div>
+    <script>
+        document.getElementById("cashOnDelivery").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevents page reload
+            alert("Cash on Delivery selected. Please keep the exact amount ready!");
+            window.location.href="success.html";
+        });
+
+        document.getElementById("payLater").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevents page reload
+            alert("Pay Later selected. You will be redirected to ICICI PayLater for verification.");
+            window.location.href="success.html";
+        });
+
+    </script>
+</body>
+</html>

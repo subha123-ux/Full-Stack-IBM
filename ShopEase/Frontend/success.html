@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        #success {
+            text-align: center;
+        }
+
+        #success img {
+            width: 600px;  /* Increased size */
+            max-width: 90%; /* Ensures responsiveness */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #success button {
+            margin-top: 20px; /* Space between image and button */
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: #28a745; /* Green success color */
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        #success button:hover {
+            background-color: #218838; /* Darker green on hover */
+            transform: scale(1.05);
+        }
+
+        #success button:active {
+            background-color: #1e7e34; /* Even darker green on click */
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+    <div id="success">
+        <img src="https://www.sendx.io/hubfs/Email-Messages-for-Order-Confirmation-Page-v3.png" alt="Order Confirmation">
+        <br>
+        <a href="index.html"><button>Go To Home</button></a>
+    </div>
+</body>
+</html>

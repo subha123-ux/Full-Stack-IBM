@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase ONLINE STORE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="D:\4th_sem\6_th_Sem\Assignment_IBM\ShopEase_logo-removebg-preview.png" alt="Logo" id="logoimg">
+                </a>
+                
+            </div>
+
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search products..." oninput="searchProducts()">
+                <img src="https://www.svgrepo.com/show/532555/search.svg" height="25px" width="25px" alt="Search">
+            </div>
+
+
+            <div class="dropdown">
+                <div class="dropdown-btn" onclick="toggleDropdown()">
+                    <img src="https://www.svgrepo.com/show/513450/location-pin.svg" height="20px" width="20px"
+                        alt="Location">
+                    <select name="location" id="location">
+                        <option value="India">India</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Chaina">Chaina</option>
+                        <option value="USA">Usa</option>
+                        <option value="Bhutan">Bhutan</option>
+                        <option value="Iceland">Iceland</option>
+                        <option value="Vietnam">Vietnam</option>
+                    </select>
+                </div>
+                <div class="dropdown-content" id="dropdownContent">
+                    <input type="text" id="searchBox" placeholder="Search here..." onkeyup="filterCountries()">
+                    <ul id="countryList"></ul>
+                </div>
+            </div>
+
+            <div class="user-actions">
+                <a href="producs.html" class="cart-container">
+
+                    <a href="cart.html" class="cart-container">
+                        <img src="https://www.svgrepo.com/show/533036/cart-arrow-down.svg" alt="Cart" height="30px" width="30px">
+                    </a>
+
+                </a>
+
+                <a href="signup.html"><b>Sign Up</b></a>
+                <a href="login.html"><b>Login</b></a>
+
+                <a href="profile.html" class="profile-container">
+                    <img src="https://www.svgrepo.com/show/527946/user-circle.svg" height="30px" width="30px"
+                        alt="profile">
+                </a>
+            </div>
+        </div>
+        
+        <nav>
+            <div class="nav-container">
+                <ul>
+                    <li><a href="index.html">All</a></li>
+                    <li><a href="fashion.html">Fashion</a></li>
+                    <li><a href="electronics.html">Electronics</a></li>
+                    <li><a href="bags.html">Bags</a></li>
+                    <li><a href="footware.html">Footwear</a></li>
+                    <li><a href="beauty.html">Beauty</a></li>
+                    <li><a href="toy.html">Toy</a></li>
+                    <li><a href="furniture.html">Furniture</a></li>
+                    <li><a href="mobile.html">Mobile</a></li>
+                    <li><a href="fitness.html">Fitness</a></li>
+                    <li><a href="jwelary.html">Jwelary</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="carousel">
+       
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <a href="https://api.spicezgold.com/download/file_1734525002307_1723967638078_slideBanner1.6bbeed1a0c8ffb494f7c.jpg"><img src="https://api.spicezgold.com/download/file_1734525002307_1723967638078_slideBanner1.6bbeed1a0c8ffb494f7c.jpg" style= "width:100%" height="400px"></a>
+              <div class="text">Caption Text</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <a href="https://api.spicezgold.com/download/file_1734525014348_NewProject(7).jpg"><img src="https://api.spicezgold.com/download/file_1734525014348_NewProject(7).jpg" style="width:100%" height="400px"></a>
+              <div class="text">Caption Two</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <a href="https://api.spicezgold.com/download/file_1734524930884_NewProject(6).jpg"><img src="https://api.spicezgold.com/download/file_1734524930884_NewProject(6).jpg" style="width:100%" height="400px"></a>
+              <div class="text">Caption Three</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+    </div>
+    <div id="products"></div>
+
+
+    <footer class="footer">
+        <a href="index.html">Back to Top</a>
+        <hr>
+    
+        <div class="footer-links">
+            <div class="footer-column">
+                <h3>Get to Know Us</h3>
+                <a href="#">About ShopEase</a>
+                <a href="#">Careers</a>
+                <a href="#">Press Releases</a>
+                <a href="#">ShopEase Science</a>
+            </div>
+            <div class="footer-column">
+                <h3>Connect with Us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+            <div class="footer-column">
+                <h3>Make Money with Us</h3>
+                <a href="#">Sell on ShopEase</a>
+                <a href="#">ShopEase Global Selling</a>
+                <a href="#">Become an Affiliate</a>
+                <a href="#">Fulfillment by ShopEase</a>
+            </div>
+            <div class="footer-column">
+                <h3>Let Us Help You</h3>
+                <a href="profile.html">Your Account</a>
+                <a href="#">Returns Centre</a>
+                <a href="#">Browse FAQs</a>
+                <a href="#">Help</a>
+                <a href="#">Payment</a>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <div class="footer-logo">ShopEase</div>
+            <div class="footer-country">
+                <select id="language-select">
+                    <option value="en">English</option>
+                    <option value="hi">हिंदी</option>
+                    <option value="be">বাংলা</option>
+                </select>
+                <select id="country-select">
+                    <option value="IN">IN India</option>
+                    <option value="US">US United States</option>
+                    <option value="UK">GB United Kingdom</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f1e7e7;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: -20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #495057;
+}
+
+/* Container for product images */
+#pimg {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 20px auto;
+    margin-top: 80px;
+}
+
+/* Individual product container */
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+/* Product image */
+.product img {
+    height: 300px;
+    width: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Buttons */
+button {
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d84315;
+}
+
+/* Center buttons below products */
+.button-container {
+    margin-top: 20px;
+}
+
+#dandr {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 80%;
+    margin: auto;
+    padding: 20px;
+    /* background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); */
+}
+#showdtl {
+    width: 30%;
+    padding: 20px;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: auto;
+
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.rating {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.stars {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.star {
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.one {
+    color: rgb(255, 0, 0);
+}
+
+.two {
+    color: rgb(255, 106, 0);
+}
+
+.three {
+    color: rgb(251, 255, 120);
+}
+
+.four {
+    color: rgb(255, 255, 0);
+}
+
+.five {
+    color: rgb(24, 159, 14);
+}
+
+textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.reviews {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.review {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.review p {
+    margin: 0;
+}
